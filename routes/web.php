@@ -16,3 +16,9 @@ Route::get('/', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/ManageVolunteers', 'HomeController@mv')->name('mv');
+
+Route::get('/ManageOpportunities', 'HomeController@mo')->name('mo');

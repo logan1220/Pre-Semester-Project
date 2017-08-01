@@ -30,4 +30,14 @@ class HomeController extends Controller
         	'users' => $users,
     	]);
     }
+
+    public function mv()
+    {
+        return view('manageVoul');
+    }
+
+    public function mo()
+    {
+        return view('manageOpp');
+    }
 }
