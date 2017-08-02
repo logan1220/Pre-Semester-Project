@@ -33,7 +33,7 @@ class HomeController extends Controller
 
     public function mv()
     {
-        return view('manageVoul');
+        return view('manageVol');
     }
 
     public function mo()

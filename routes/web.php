@@ -19,6 +19,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/ManageVolunteers', 'HomeController@mv')->name('mv');
+Route::get('/manage-volunteers', 'HomeController@mv')->name('manageVol');
 
-Route::get('/ManageOpportunities', 'HomeController@mo')->name('mo');
+Route::get('/manage-opportunities', 'HomeController@mo')->name('manageOpp');
