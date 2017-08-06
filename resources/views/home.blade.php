@@ -12,7 +12,9 @@
                 </div>
 
                 @foreach($users as $user)
-                    <li>User {{ $user->id }}: {{ $user->name }}
+                <ul>
+                    <li>User {{ $user->id }}: {{ $user->name }}</li>
+                </ul>
                 @endforeach
             </div>
         </div>
