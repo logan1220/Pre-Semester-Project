@@ -8,8 +8,15 @@
                 <div class="panel-heading">Manage Volunteers</div>
 
                 <div class="panel-body">
-                    MANAGE vol
+                    Volunteer List<br><br>
+
+                    @foreach($users as $user)               
+                        {{ $user->name }}, 
+                    @endforeach
                 </div>
+
+
+
             </div>
         </div>
     </div>

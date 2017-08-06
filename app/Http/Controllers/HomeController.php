@@ -33,7 +33,11 @@ class HomeController extends Controller
 
     public function mv()
     {
-        return view('manageVol');
+        $users = User::all();
+
+        return view('manageVol', [
+            'users' => $users,
+        ]);
     }
 
     public function mo()
