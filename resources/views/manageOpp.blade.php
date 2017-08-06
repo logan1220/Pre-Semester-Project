@@ -8,7 +8,9 @@
                 <div class="panel-heading">Manage Opportunities</div>
 
                 <div class="panel-body">
-                    Manage Opportunities [body]
+                             
+                    <img src="http://i.imgur.com/rz4q2zp.jpg"/>
+
                 </div>
             </div>
         </div>
