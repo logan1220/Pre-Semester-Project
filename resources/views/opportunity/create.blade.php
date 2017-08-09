@@ -3,11 +3,11 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-  <form method="post" action="{{ url('volunteer') }}">
+  <form method="post" action="{{ url('opportunity') }}">
 
     <div class="form-group row">
       {{csrf_field()}}
-      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Volunteer Name</label>
+      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Opportunity Name</label>
       <div class="col-sm-3">
         <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="First Name" name="title">
       </div>
@@ -150,26 +150,3 @@
   </form>
 </div>
 @endsection
-
-<!--
-a.	First Name
-b.	Last Name
-c.	Username
-d.	Password
-e.	Centers where the volunteer prefers to work
-f.	Skills/Interests
-g.	Availability times
-h.	Address
-i.	Home/work/cell phone numbers
-j.	Email
-k.	Educational Background
-l.	Current Licenses
-m.	Emergency Contact Name
-n.	Emergency Contact Home/Work Phone
-o.	Emergency Contact Email
-p.	Emergency Contact Address
-q.	Whether there is a copy of volunteer’s drivers license on file
-r.	Whether there is a copy of volunteer’s social security card on file
-s.	Volunteer’s Approval Status
-
--->

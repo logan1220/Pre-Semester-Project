@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Opportunity;
 use Illuminate\Http\Request;
 
 class OpportunityController extends Controller
@@ -13,7 +14,9 @@ class OpportunityController extends Controller
      */
     public function index()
     {
-        //
+        $opportunity = Opportunity::all()->toArray();
+
+        return view('opportunity.index', compact('opportunity'));
     }
 
     /**
@@ -23,7 +26,7 @@ class OpportunityController extends Controller
      */
     public function create()
     {
-        //
+        return view('opportunity.create');
     }
 
     /**
@@ -56,7 +59,9 @@ class OpportunityController extends Controller
      */
     public function edit($id)
     {
-        //
+        $opportunity = Opportunity::find($id);
+
+        return view('opportunity.edit', compact('opportunity', 'id'));
     }
 
     /**
@@ -79,6 +84,9 @@ class OpportunityController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $opportunity = Opportunity::find($id);
+        $opportunity->delete();
+
+        return redirect('/opportunity');
     }
 }

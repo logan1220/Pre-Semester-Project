@@ -25,4 +25,4 @@ Route::resource('volunteer', 'VolunteerController');
 
 Route::get('/about', 'HomeController@us')->name('about');
 
-Route::resource('opportunity', 'VolunteerController');
+Route::resource('opportunity', 'OpportunityController');

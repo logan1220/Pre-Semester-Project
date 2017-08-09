@@ -35,7 +35,7 @@
     <div class="col-sm-6">
         <input type="text" class="form-control form-control-lg" id="vollicid" placeholder="Licenses" name="vollic">
       </div>
-    </div>     
+    </div>
 
     <div class="form-group row">
       <label for="volaccinfoid" class="col-sm-2 col-form-label col-form-label-lg">Account Information</label>
@@ -125,7 +125,7 @@
     <div class="col-sm-6">
         <input type="text" class="form-control form-control-lg" id="volemergencyaddressid" placeholder="Emergency Contact's Address" name="volemergencyaddress">
       </div>
-    </div> 
+    </div>
 
     <div class="form-group row">
     <label for="volemergencycontactid" class="col-sm-2 col-form-label col-form-label-lg">Phone Number and Email Address</label>
@@ -150,26 +150,3 @@
   </form>
 </div>
 @endsection
-
-<!--
-a.	First Name
-b.	Last Name
-c.	Username
-d.	Password
-e.	Centers where the volunteer prefers to work
-f.	Skills/Interests
-g.	Availability times
-h.	Address
-i.	Home/work/cell phone numbers
-j.	Email
-k.	Educational Background
-l.	Current Licenses
-m.	Emergency Contact Name
-n.	Emergency Contact Home/Work Phone
-o.	Emergency Contact Email
-p.	Emergency Contact Address
-q.	Whether there is a copy of volunteer’s drivers license on file
-r.	Whether there is a copy of volunteer’s social security card on file
-s.	Volunteer’s Approval Status
-
--->
