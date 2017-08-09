@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/manage-volunteers', 'HomeController@mv')->name('manageVol');
 
 Route::get('/manage-opportunities', 'HomeController@mo')->name('manageOpp');
+
+Route::resource('crud', 'CRUDController');
+
+Route::get('/about', 'HomeController@us')->name('about');

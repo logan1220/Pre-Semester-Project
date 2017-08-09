@@ -44,4 +44,9 @@ class HomeController extends Controller
     {
         return view('manageOpp');
     }
+
+    public function us()
+    {
+        return view('about');
+    }
 }
