@@ -1,6 +1,6 @@
 <!-- create.blade.php -->
 
-@extends('master')
+@extends('layouts.app')
 @section('content')
 <div class="container">
   <form method="post" action="{{url('crud')}}">
@@ -21,7 +21,21 @@
       <div class="col-sm-6">
         <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Address" name="title">
       </div>
-    </div> 
+    </div>
+
+    <div class="form-group row">
+    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Educational Background</label>
+    <div class="col-sm-6">
+        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Education" name="Status">
+      </div>
+    </div>
+
+    <div class="form-group row">
+    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses</label>
+    <div class="col-sm-6">
+        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Licenses" name="Status">
+      </div>
+    </div>     
 
     <div class="form-group row">
       <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Account Information</label>
@@ -32,6 +46,20 @@
         <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Password" name="title">
       </div>
     </div>
+    <div class="form-group row">
+    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Contact Methods</label>
+    </div>
+
+    <div class="form-group row">
+    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Phone Number and Email Address</label>
+    <div class="col-sm-3">
+        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Phone Number" name="Status">
+      </div>
+    <div class="col-sm-3">
+        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Email" name="Status">
+      </div>
+    </div>
+
 
     <div class="form-group row">
       <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Copy of Drivers License</label>
@@ -82,34 +110,6 @@
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Contact Methods</label>
-    </div>
-
-    <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Phone Number and Email Address</label>
-    <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Phone Number" name="Status">
-      </div>
-    <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Email" name="Status">
-      </div>
-    </div>
-
-    <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Educational Background</label>
-    <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Education" name="Status">
-      </div>
-    </div>
-
-    <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses</label>
-    <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Licenses" name="Status">
-      </div>
-    </div>
-
-    <div class="form-group row">
     <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Emergency Contact Information</label>
     </div>
 
@@ -138,7 +138,7 @@
     </div>
 
     <div class="form-group row">
-      <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm">Skills and Interests</label>
+      <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm">Volunteer's Skills and Interests</label>
       <div class="col-sm-10">
         <textarea name="post" rows="8" cols="74"></textarea>
       </div>
