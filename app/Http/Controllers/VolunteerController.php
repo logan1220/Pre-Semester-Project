@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\CRUD;
+use App\Volunteer;
 
-class CRUDController extends Controller
+class VolunteerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class CRUDController extends Controller
      */
     public function index()
     {
-        $cruds = Crud::all()->toArray();
+        $volunteers = Volunteer::all()->toArray();
         
-        return view('crud.index', compact('cruds'));
+        return view('volunteer.index', compact('volunteers'));
     }
 
     /**
@@ -26,7 +26,7 @@ class CRUDController extends Controller
      */
     public function create()
     {
-        return view('crud.create');
+        return view('volunteer.create');
     }
 
     /**
@@ -37,13 +37,13 @@ class CRUDController extends Controller
      */
     public function store(Request $request)
     {
-        $crud = new Crud([
+        $crud = new Volunteer([
             'title' => $request->get('title'),
             'post' => $request->get('post')
         ]);
 
         $crud->save();
-        return redirect('/crud');
+        return redirect('/volunteer');
     }
 
     /**
@@ -65,9 +65,9 @@ class CRUDController extends Controller
      */
     public function edit($id)
     {
-        $crud = Crud::find($id);
+        $volunteer = Volunteer::find($id);
 
-        return view('crud.edit', compact('crud', 'id'));
+        return view('volunteer.edit', compact('volunteer', 'id'));
     }
 
     /**
@@ -79,11 +79,11 @@ class CRUDController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $crud = Crud::find($id);
-        $crud->title = $request->get('title');
-        $crud->post = $request->get('post');
-        $crud->save();
-        return redirect('/crud');
+        $volunteer = Volunteer::find($id);
+        $volunteer->title = $request->get('title');
+        $volunteer->post = $request->get('post');
+        $volunteer->save();
+        return redirect('/volunteer');
     }
 
     /**
@@ -94,9 +94,9 @@ class CRUDController extends Controller
      */
     public function destroy($id)
     {
-        $crud = Crud::find($id);
-        $crud->delete();
+        $volunteer = Volunteer::find($id);
+        $volunteer->delete();
 
-        return redirect('/crud');
+        return redirect('/volunteer');
     }
 }
