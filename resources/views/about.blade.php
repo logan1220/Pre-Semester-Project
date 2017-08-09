@@ -26,7 +26,7 @@
 
                     </div>
 
-                    <img src="http://i.imgur.com/rz4q2zp.jpg"/>
+                    <center><img src="http://i.imgur.com/rz4q2zp.jpg"/></center>
 
                 </div>
             </div>
