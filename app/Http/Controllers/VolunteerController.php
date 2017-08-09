@@ -14,9 +14,9 @@ class VolunteerController extends Controller
      */
     public function index()
     {
-        $volunteers = Volunteer::all()->toArray();
+        $volunteer = Volunteer::all()->toArray();
         
-        return view('volunteer.index', compact('volunteers'));
+        return view('volunteer.index', compact('volunteer'));
     }
 
     /**
@@ -37,12 +37,12 @@ class VolunteerController extends Controller
      */
     public function store(Request $request)
     {
-        $crud = new Volunteer([
+        $volunteer = new Volunteer([
             'title' => $request->get('title'),
             'post' => $request->get('post')
         ]);
 
-        $crud->save();
+        $volunteer->save();
         return redirect('/volunteer');
     }
 

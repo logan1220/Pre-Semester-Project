@@ -13,14 +13,14 @@
       </tr>
     </thead>
     <tbody>
-      @foreach($cruds as $post)
+      @foreach($volunteer as $post)
       <tr>
         <td>{{$post['id']}}</td>
         <td>{{$post['title']}}</td>
         <td>{{$post['post']}}</td>
-        <td><a href="{{action('CRUDController@edit', $post['id'])}}" class="btn btn-warning">Edit</a></td>
+        <td><a href="{{action('VolunteerController@edit', $post['id'])}}" class="btn btn-warning">Edit</a></td>
         <td>
-          <form action="{{action('CRUDController@destroy', $post['id'])}}" method="post">
+          <form action="{{action('VolunteerController@destroy', $post['id'])}}" method="post">
             {{csrf_field()}}
             <input name="_method" type="hidden" value="DELETE">
             <button class="btn btn-danger" type="submit">Delete</button>
