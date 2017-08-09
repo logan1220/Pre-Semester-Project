@@ -7,133 +7,133 @@
 
     <div class="form-group row">
       {{csrf_field()}}
-      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Volunteer Name</label>
+      <label for="volfnameid" class="col-sm-2 col-form-label col-form-label-lg">Volunteer Name</label>
       <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="First Name" name="title">
+        <input type="text" class="form-control form-control-lg" id="volfname" placeholder="First Name" name="volfname">
       </div>
       <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Last Name" name="title">
+        <input type="text" class="form-control form-control-lg" id="volfname" placeholder="Last Name" name="vollname">
       </div>
     </div>
 
     <div class="form-group row">
-      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
+      <label for="voladdid" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Address" name="title">
+        <input type="text" class="form-control form-control-lg" id="voladdid" placeholder="Address" name="voladd">
       </div>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Educational Background</label>
+    <label for="voleduid" class="col-sm-2 col-form-label col-form-label-lg">Educational Background</label>
     <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Education" name="Status">
+        <input type="text" class="form-control form-control-lg" id="voleduid" placeholder="Education" name="voledu">
       </div>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses</label>
+    <label for="vollicid" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses</label>
     <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Licenses" name="Status">
+        <input type="text" class="form-control form-control-lg" id="vollicid" placeholder="Licenses" name="vollic">
       </div>
     </div>     
 
     <div class="form-group row">
-      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Account Information</label>
+      <label for="volaccinfoid" class="col-sm-2 col-form-label col-form-label-lg">Account Information</label>
       <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Username" name="title">
+        <input type="text" class="form-control form-control-lg" id="volaccinfoid" placeholder="Username" name="volaccinfofirst">
       </div>
       <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Password" name="title">
+        <input type="text" class="form-control form-control-lg" id="volaccinfoid" placeholder="Password" name="volaccinfolast">
       </div>
     </div>
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Contact Methods</label>
+    <label for="volcontactid" class="col-sm-2 col-form-label col-form-label-lg">Contact Methods</label>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Phone Number and Email Address</label>
+    <label for="volcontactid" class="col-sm-2 col-form-label col-form-label-lg">Phone Number and Email Address</label>
     <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Phone Number" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volcontactid" placeholder="Phone Number" name="volphone">
       </div>
     <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Email" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volcontactid" placeholder="Email" name="volemail">
       </div>
     </div>
 
 
     <div class="form-group row">
-      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Copy of Drivers License</label>
+      <label for="voldriverid" class="col-sm-2 col-form-label col-form-label-lg">Copy of Drivers License</label>
       <div class="col-sm-2">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Yes / No" name="title">
+        <input type="text" class="form-control form-control-lg" id="voldriverid" placeholder="Yes / No" name="voldriver">
       </div>
     </div>
 
     <div class="form-group row">
-      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Copy of Social Security</label>
+      <label for="volssnid" class="col-sm-2 col-form-label col-form-label-lg">Copy of Social Security</label>
       <div class="col-sm-2">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Yes / No" name="title">
+        <input type="text" class="form-control form-control-lg" id="volssnid" placeholder="Yes / No" name="volssn">
       </div>
     </div>
 
     <div class="form-group row">
-      <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Preferred Locations</label>
+      <label for="vollocid" class="col-sm-2 col-form-label col-form-label-lg">Preferred Locations</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Centers where volunteer prefers to work" name="title">
+        <input type="text" class="form-control form-control-lg" id="vollocid" placeholder="Centers where volunteer prefers to work" name="volloc">
       </div>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Status</label>
+    <label for="volstatusid" class="col-sm-2 col-form-label col-form-label-lg">Status</label>
     <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Approved/Pending Approval/Disapproved/Inactive" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volstatusid" placeholder="Approved/Pending Approval/Disapproved/Inactive" name="volstatus">
       </div>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Weekday Availability</label>
+    <label for="volavailidweekday" class="col-sm-2 col-form-label col-form-label-lg">Weekday Availability</label>
     <div class="col-sm-1">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="From" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volavailidweekday" placeholder="From" name="volavailweekdafrom">
       </div>
     <div class="col-sm-1">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="To" name="Status">
-      </div>
-    </div>
-
-    <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Weekend Availability</label>
-    <div class="col-sm-1">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="From" name="Status">
-      </div>
-    <div class="col-sm-1">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="To" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volavailidweekday" placeholder="To" name="volavailweekdayto">
       </div>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Emergency Contact Information</label>
+    <label for="volavailidweekend" class="col-sm-2 col-form-label col-form-label-lg">Weekend Availability</label>
+    <div class="col-sm-1">
+        <input type="text" class="form-control form-control-lg" id="volavailidweekend" placeholder="From" name="volavailidweekendfrom">
+      </div>
+    <div class="col-sm-1">
+        <input type="text" class="form-control form-control-lg" id="volavailidweekend" placeholder="To" name="volavailidweekendto">
+      </div>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
+    <label for="volemergencyid" class="col-sm-2 col-form-label col-form-label-lg">Emergency Contact Information</label>
+    </div>
+
+    <div class="form-group row">
+    <label for="volemergencyid" class="col-sm-2 col-form-label col-form-label-lg">Name</label>
     <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Emergency Contact's Name" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volemergencyid" placeholder="Emergency Contact's Name" name="volemergencyname">
       </div>
     </div>
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
+    <label for="volemergencyaddressid" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
     <div class="col-sm-6">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Emergency Contact's Address" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volemergencyaddressid" placeholder="Emergency Contact's Address" name="volemergencyaddress">
       </div>
     </div> 
 
     <div class="form-group row">
-    <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Phone Number and Email Address</label>
+    <label for="volemergencycontactid" class="col-sm-2 col-form-label col-form-label-lg">Phone Number and Email Address</label>
     <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Emergency Phone Number" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volemergencycontactid" placeholder="Emergency Phone Number" name="volemergencycontactphone">
       </div>
     <div class="col-sm-3">
-        <input type="text" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="Emergency Email" name="Status">
+        <input type="text" class="form-control form-control-lg" id="volemergencycontactid" placeholder="Emergency Email" name="volemergencycontactemail">
       </div>
     </div>
 
