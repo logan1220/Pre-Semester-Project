@@ -24,3 +24,5 @@ Route::get('/manage-opportunities', 'HomeController@mo')->name('manageOpp');
 Route::resource('volunteer', 'VolunteerController');
 
 Route::get('/about', 'HomeController@us')->name('about');
+
+Route::resource('opportunity', 'VolunteerController');
