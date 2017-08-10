@@ -31,21 +31,8 @@ class HomeController extends Controller
     	]);
     }
 
-    public function mv()
-    {
-        $users = User::all();
 
-        return view('manageVol', [
-            'users' => $users,
-        ]);
-    }
-
-    public function mo()
-    {
-        return view('manageOpp');
-    }
-
-    public function us()
+    public function about_us()
     {
         return view('about');
     }

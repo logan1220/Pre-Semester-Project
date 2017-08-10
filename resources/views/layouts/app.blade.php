@@ -46,8 +46,8 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
-                            <li><a href="{{ route('manageVol') }}">Manage Volunteers</a></li>
-                            <li><a href="{{ route('manageOpp') }}">Manage Opportunities</a></li>
+                            <li><a href="{{ route('manage_volunteer') }}">Manage Volunteers</a></li>
+                            <li><a href="{{ route('manage_opportunity') }}">Manage Opportunities</a></li>
                             <li><a href="{{ route('about') }}">About Us</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
