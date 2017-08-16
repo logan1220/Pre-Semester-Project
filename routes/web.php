@@ -17,12 +17,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/manage-volunteers', 'VolunteerController@index')->name('manage_volunteer');
-
-Route::get('/manage-opportunities', 'OpportunityController@index')->name('manage_opportunity');
+Route::get('/about', 'HomeController@about_us')->name('about');
 
 Route::resource('volunteer', 'VolunteerController');
-
-Route::get('/about', 'HomeController@about_us')->name('about');
 
 Route::resource('opportunity', 'OpportunityController');

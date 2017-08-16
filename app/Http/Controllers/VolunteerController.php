@@ -37,6 +37,11 @@ class VolunteerController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required|max:100|regex:[0-9]+',
+            'email' => 'required|email',
+        ]);
+
         $volunteer = new Volunteer([
             'title' => $request->get('title'),
             'post' => $request->get('post')
