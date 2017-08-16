@@ -11,7 +11,7 @@
 
                         <center><img src="http://i.imgur.com/rz4q2zp.jpg"/></center>
                         <p>
-                        <div style="text-align:left;"><p><div style="text-decoration:underline"><b>Madison Gourde</b></div><p>
+                        <div style="text-align:left;"><p><div style="text-decoration:underline;"><b>Madison Gourde</b></div><p>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Madison (bottom right) was born in North Dakota, but was raised from the age of 5 and up in various areas of Florida before settling in Jacksonville. She started at UNF in 2014 for her freshman year in hopes of getting a degree in Accounting before making a hard, but necessary, decision and switching majors. She expects to graduate in May of 2018 with a Bachelor’s in Information Science.
                         </div><p><p>
                         <hr width="80%">
