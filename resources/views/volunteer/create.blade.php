@@ -64,7 +64,10 @@
             <div class="form-group row">
                 <label for="Volunteer_Licenses" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-lg" id="Volunteer_Licenses" placeholder="Licenses" name="Volunteer_Licenses" required>
+                    <select class="form-control form-control-lg" id="Volunteer_Licenses" name="Volunteer_Licenses">
+                        <option>None</option>
+                        <option>Mecical License</option>
+                    </select>
                 </div>
             </div>
 
