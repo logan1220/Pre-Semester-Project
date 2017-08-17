@@ -37,7 +37,11 @@
         <label for="Opportunity_Location" class="col-sm-2 col-form-label col-form-label-lg">Location Center</label>
         <div class="col-sm-3">
           <select class="form-control form-control-lg" id="Opportunity_Location" name="Opportunity_Location" required>
-            <option>Jacksonville</option>
+            <option value="na">None</option>
+            <option value="KL">Kings Landing</option>
+            <option value="Mid">Midgar</option>
+            <option value="SA">San Andreas</option>
+            <option value="Shadow">Shadow Moses Island</option>
           </select>
         </div>
       </div>
@@ -55,8 +59,13 @@
         <label for="Opportunity_Licenses" class="col-sm-2 col-form-label col-form-label-lg">Licenses Required</label>
         <div class="col-sm-3">
           <select class="form-control form-control-lg" id="Opportunity_Licenses" name="Opportunity_Licenses">
-            <option>None</option>
-            <option>Medical License</option>
+            <option value="na">None</option>
+            <option value="medical">Medical License</option>
+            <option value="edu">Educational License</option>
+            <option value="cosmetic">Cosmetic License</option>
+            <option value="child">Child Care License</option>
+            <option value="tech">Technology License</option>
+            <option value="cooking">Cooking License</option>
           </select>
         </div>
       </div>
@@ -65,7 +74,10 @@
         <label for="Opportunity_Availability" class="col-sm-2 col-form-label col-form-label-lg">Availability Times</label>
         <div class="col-sm-3">
           <select class="form-control form-control-lg" id="Opportunity_Availability" name="Opportunity_Availability" required>
-            <option>6AM - 6PM</option>
+            <option value="na">None</option>
+            <option value="day">6AM - 6PM</option>
+            <option value="night">6PM - 12AM</option>
+            <option value="all">All Day</option>
           </select>
         </div>
       </div>
@@ -74,7 +86,11 @@
         <label for="Opportunity_Skills" class="col-sm-2 col-form-label col-form-label-sm">Opportunity's Skills</label>
         <div class="col-sm-3">
           <select class="form-control form-control-lg" id="Opportunity_Skills" name="Opportunity_Skills">
-            <option>Many Skillz</option>
+            <option value="na">None</option>
+            <option value="Drawing">Drawing</option>
+            <option value="Programming">Programming</option>
+            <option value="Baby">Baby Sitting</option>
+            <option value="Cook">Cooking</option>
           </select>
         </div>
       </div>

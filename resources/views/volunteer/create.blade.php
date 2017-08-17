@@ -56,7 +56,11 @@
                 <label for="Volunteer_Education" class="col-sm-2 col-form-label col-form-label-lg">Educational Background</label>
                 <div class="col-sm-6">
                     <select class="form-control form-control-lg" id="Volunteer_Education" name="Volunteer_Education" required>
-                        <option>High School Diploma</option>
+                        <option value ="hs">High School Diploma</option>
+                        <option value ="aa">Associates of Arts or Sciences</option>
+                        <option value ="ba">Bachelors Degree</option>
+                        <option value ="ma">Masters Degree</option>
+                        <option value ="phd">Doctorate</option>
                     </select>
                 </div>
             </div>
