@@ -56,6 +56,7 @@
                 <label for="Volunteer_Education" class="col-sm-2 col-form-label col-form-label-lg">Educational Background</label>
                 <div class="col-sm-6">
                     <select class="form-control form-control-lg" id="Volunteer_Education" name="Volunteer_Education" required>
+                        <option value ="na">None</option>
                         <option value ="hs">High School Diploma</option>
                         <option value ="aa">Associates of Arts or Sciences</option>
                         <option value ="ba">Bachelors Degree</option>
@@ -69,8 +70,13 @@
                 <label for="Volunteer_Licenses" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses</label>
                 <div class="col-sm-6">
                     <select class="form-control form-control-lg" id="Volunteer_Licenses" name="Volunteer_Licenses">
-                        <option>None</option>
-                        <option>Mecical License</option>
+                        <option value="na">None</option>
+                        <option value="medical">Medical License</option>
+                        <option value="edu">Educational License</option>
+                        <option value="cosmetic">Cosmetic License</option>
+                        <option value="child">Child Care License</option>
+                        <option value="tech">Technology License</option>
+                        <option value="cooking">Cooking License</option>
                     </select>
                 </div>
             </div>
@@ -116,7 +122,11 @@
                 <label for="Volunteer_Location" class="col-sm-2 col-form-label col-form-label-lg">Preferred Locations</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_Location" name="Volunteer_Location" required>
-                        <option>Jacksonville</option>
+                        <option value="np">No Preference</option>
+                        <option value="KL">Kings Landing</option>
+                        <option value="Mid">Midgar</option>
+                        <option value="SA">San Andreas</option>
+                        <option value="Shadow">Shadow Moses Island</option>
                     </select>
                 </div>
             </div>
@@ -125,7 +135,10 @@
                 <label for="Volunteer_Availability" class="col-sm-2 col-form-label col-form-label-lg">Availability</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_Availability" name="Volunteer_Availability" required>
-                        <option>6AM - 6PM</option>
+                        <option value="na">None</option>
+                        <option value="day">6AM - 6PM</option>
+                        <option value="night">6PM - 12AM</option>
+                        <option value="all">All Day</option>
                     </select>
                 </div>
             </div>
@@ -134,7 +147,11 @@
                 <label for="Volunteer_Skills" class="col-sm-2 col-form-label col-form-label-sm">Volunteer's Skills</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_Skills" name="Volunteer_Skills" required>
-                        <option>Many Skillz</option>
+                        <option value="na">None</option>
+                        <option value="Drawing">Drawing</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Baby">Baby Sitting</option>
+                        <option value="Cook">Cooking</option>
                     </select>
                 </div>
             </div>

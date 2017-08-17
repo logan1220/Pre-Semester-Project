@@ -37,7 +37,7 @@
         <label for="Opportunity_Location" class="col-sm-2 col-form-label col-form-label-lg">Location Center</label>
         <div class="col-sm-3">
           <select class="form-control form-control-lg" id="Opportunity_Location" name="Opportunity_Location" required>
-            <option value="na">None</option>
+            <option value="np">No Preference</option>
             <option value="KL">Kings Landing</option>
             <option value="Mid">Midgar</option>
             <option value="SA">San Andreas</option>
