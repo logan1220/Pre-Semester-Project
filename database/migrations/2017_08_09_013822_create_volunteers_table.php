@@ -20,13 +20,13 @@ class CreateVolunteersTable extends Migration
             $table->string('username', 100);
             $table->string('password', 100);
             $table->string('address1',100);
-            $table->string('address2', 100);
+            $table->string('address2', 100)->nullable();
             $table->string('city', 100);
             $table->string('state', 100);
             $table->string('zip', 20);
-            $table->string('phone_home', 12);
+            $table->string('phone_home', 12)->nullable();
             $table->string('phone_cell', 12);
-            $table->string('phone_work', 12);
+            $table->string('phone_work', 12)->nullable();
             $table->string('drivers_license', 100);
             $table->string('ssn', 100);
             $table->string('email', 100);
@@ -46,7 +46,7 @@ class CreateVolunteersTable extends Migration
             $table->string('emergency_city', 100);
             $table->string('emergency_state', 100);
             $table->string('emergency_zip', 20);
-            $table->string('emergency_phone_home', 12);
+            $table->string('emergency_phone_home', 12)->nullable();
             $table->string('emergency_phone_cell', 12);
             $table->timestamps();
         });
