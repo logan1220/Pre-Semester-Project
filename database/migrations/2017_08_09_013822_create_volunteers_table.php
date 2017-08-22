@@ -24,16 +24,19 @@ class CreateVolunteersTable extends Migration
             $table->string('city', 100);
             $table->string('state', 100);
             $table->string('zip', 20);
-            $table->string('phone_home', 100);
-            $table->string('phone_cell', 100);
-            $table->string('phone_work', 100);
+            $table->string('phone_home', 12);
+            $table->string('phone_cell', 12);
+            $table->string('phone_work', 12);
             $table->string('drivers_license', 100);
             $table->string('ssn', 100);
             $table->string('email', 100);
             $table->string('approval_status', 100);
             $table->string('volunteer_centers', 100);
             $table->string('skills', 100);
-            $table->string('availability_times', 100);
+            $table->string('weekday_availability_start', 100);
+            $table->string('weekday_availability_end', 100);
+            $table->string('weekend_availability_start', 100);
+            $table->string('weekend_availability_end', 100);
             $table->string('education', 100);
             $table->string('licenses', 100);
             $table->string('emergency_fname', 100);
@@ -43,10 +46,9 @@ class CreateVolunteersTable extends Migration
             $table->string('emergency_city', 100);
             $table->string('emergency_state', 100);
             $table->string('emergency_zip', 20);
-            $table->string('emergency_phone_home', 100);
-            $table->string('emergency_phone_cell', 100);
-            $table->string('emergency_phone_work', 100);
-            $table->string('emergency_email', 100);
+            $table->string('emergency_phone_home', 12);
+            $table->string('emergency_phone_cell', 12);
+            $table->timestamps();
         });
     }
 

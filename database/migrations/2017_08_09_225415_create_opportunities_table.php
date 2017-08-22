@@ -15,8 +15,19 @@ class CreateOpportunitiesTable extends Migration
     {
         Schema::create('opportunities', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('location');
+            $table->string('name',200);
+            $table->string('address1',100);
+            $table->string('address2',100)->nullable();
+            $table->string('city',100);
+            $table->string('state',100);
+            $table->string('volunteer_center',20);
+            $table->string('licenses',100);
+            $table->string('skills',100);
+            $table->string('weekday_availability_start', 100);
+            $table->string('weekday_availability_end', 100);
+            $table->string('weekend_availability_start', 100);
+            $table->string('weekend_availability_end', 100);
+            $table->timestamps();
         });
     }
 

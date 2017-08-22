@@ -1,3 +1,7 @@
+This Presemester Project was built by Team 3Peat following the business requirements (VMSRequirements.docx). Our team is using PHP and Laravel 5.4.
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
