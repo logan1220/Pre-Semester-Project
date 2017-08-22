@@ -30,17 +30,17 @@
                         <div class="row" style="margin: 25px 0px 0px 0px">
                             <table id="volunteerTable" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                 <thead>
-                                    <tr>
-                                        <th>Full Name</th>
-                                        <th>Email</th>
-                                        <th>Cell Phone</th>
-                                        <th>Status</th>
-                                        <th>Date Created</th>
-                                        <th>Actions</th>
-                                    </tr>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Cell Phone</th>
+                                    <th>Status</th>
+                                    <th>Date Created</th>
+                                    <th>Actions</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($volunteers as $volunteer)
+                                @foreach($volunteers as $volunteer)
                                     <tr>
                                         <td>{{ $volunteer->fname . " " . $volunteer->lname }}</td>
                                         <td>{{ $volunteer->email }}</td>
@@ -56,17 +56,17 @@
                                             </a>
                                         </td>
                                     </tr>
-                                    @endforeach
+                                @endforeach
                                 </tbody>
                                 <tfoot>
-                                    <tr>
-                                        <th>Full Name</th>
-                                        <th>Email</th>
-                                        <th>Cell Phone</th>
-                                        <th>Status</th>
-                                        <th>Date Created</th>
-                                        <th></th>
-                                    </tr>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Cell Phone</th>
+                                    <th>Status</th>
+                                    <th>Date Created</th>
+                                    <th></th>
+                                </tr>
                                 </tfoot>
                             </table>
                         </div>

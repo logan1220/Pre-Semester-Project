@@ -96,34 +96,34 @@
             <div class="col-sm-6">
                 <select class="form-control form-control-lg" id="Volunteer_Education" name="education" disabled>
                     <option value ="None"
-                        @if($volunteer->education == "None")
+                            @if($volunteer->education == "None")
                             selected
-                        @endif
+                            @endif
                     >None</option>
                     <option value="High School Diploma"
-                        @if($volunteer->education == "High School Diploma")
-                        selected
-                        @endif
+                            @if($volunteer->education == "High School Diploma")
+                            selected
+                            @endif
                     >High School Diploma</option>
                     <option value="Associates of Arts or Sciences"
-                        @if($volunteer->education == "Associates of Arts or Sciences")
-                        selected
-                        @endif
+                            @if($volunteer->education == "Associates of Arts or Sciences")
+                            selected
+                            @endif
                     >Associates of Arts or Sciences</option>
                     <option value="Bachelors Degree"
-                        @if($volunteer->education == "Bachelors Degree")
-                        selected
-                        @endif
+                            @if($volunteer->education == "Bachelors Degree")
+                            selected
+                            @endif
                     >Bachelors Degree</option>
                     <option value="Masters Degree"
-                        @if($volunteer->education == "Masters Degree")
-                        selected
-                        @endif
+                            @if($volunteer->education == "Masters Degree")
+                            selected
+                            @endif
                     >Masters Degree</option>
                     <option value="Doctorate"
-                        @if($volunteer->education == "Doctorate")
-                        selected
-                        @endif
+                            @if($volunteer->education == "Doctorate")
+                            selected
+                            @endif
                     >Doctorate</option>
                 </select>
             </div>
@@ -134,39 +134,39 @@
             <div class="col-sm-6">
                 <select class="form-control form-control-lg" id="Volunteer_Licenses" name="licenses" disabled>
                     <option value="None"
-                        @if($volunteer->licenses== "None")
-                        selected
-                        @endif
+                            @if($volunteer->licenses== "None")
+                            selected
+                            @endif
                     >None</option>
                     <option value="Medical License"
-                        @if($volunteer->licenses== "Medical License")
-                        selected
-                        @endif
+                            @if($volunteer->licenses== "Medical License")
+                            selected
+                            @endif
                     >Medical License</option>
                     <option value="Education License"
-                        @if($volunteer->licenses== "Education License")
-                        selected
-                        @endif
+                            @if($volunteer->licenses== "Education License")
+                            selected
+                            @endif
                     >Educational License</option>
                     <option value="Cosmetic License"
-                        @if($volunteer->licenses== "Cosmetic License")
-                        selected
-                        @endif
+                            @if($volunteer->licenses== "Cosmetic License")
+                            selected
+                            @endif
                     >Cosmetic License</option>
                     <option value="Child Care License"
-                        @if($volunteer->licenses== "Child Care License")
-                        selected
-                        @endif
+                            @if($volunteer->licenses== "Child Care License")
+                            selected
+                            @endif
                     >Child Care License</option>
                     <option value="Technology License"
-                        @if($volunteer->licenses== "Technology License")
-                        selected
-                        @endif
+                            @if($volunteer->licenses== "Technology License")
+                            selected
+                            @endif
                     >Technology License</option>
                     <option value="Cooking License"
-                        @if($volunteer->licenses== "Cooking License")
-                        selected
-                        @endif
+                            @if($volunteer->licenses== "Cooking License")
+                            selected
+                            @endif
                     >Cooking License</option>
                 </select>
             </div>
@@ -247,9 +247,9 @@
             <div class="col-sm-3">
                 <select class="form-control form-control-lg" id="Volunteer_Location" name="volunteer_centers" disabled>
                     <option value="All"
-                        @if($volunteer->volunteer_centers == "All")
-                        selected
-                        @endif
+                            @if($volunteer->volunteer_centers == "All")
+                            selected
+                            @endif
                     >No Preference</option>
                     <option value="Kings Landing"
                             @if($volunteer->volunteer_centers == "Kings Landing")
@@ -267,9 +267,9 @@
                             @endif
                     >San Andreas</option>
                     <option value="Shadow Moses Island"
-                        @if($volunteer->volunteer_centers == "Shadow Moses Island")
-                        selected
-                        @endif
+                            @if($volunteer->volunteer_centers == "Shadow Moses Island")
+                            selected
+                            @endif
                     >Shadow Moses Island</option>
                 </select>
             </div>
@@ -338,29 +338,29 @@
             <div class="col-sm-3">
                 <select class="form-control form-control-lg" id="Volunteer_Skills" name="skills" disabled>
                     <option value="None"
-                        @if($volunteer->skills == "None")
-                        selected
-                        @endif
+                            @if($volunteer->skills == "None")
+                            selected
+                            @endif
                     >None</option>
                     <option value="Drawing"
-                        @if($volunteer->skills == "Drawing")
-                        selected
-                        @endif
+                            @if($volunteer->skills == "Drawing")
+                            selected
+                            @endif
                     >Drawing</option>
                     <option value="Programming"
-                        @if($volunteer->skills == "Programming")
-                        selected
-                        @endif
+                            @if($volunteer->skills == "Programming")
+                            selected
+                            @endif
                     >Programming</option>
                     <option value="Baby Sitting"
-                        @if($volunteer->skills == "Baby Sitting")
-                        selected
-                        @endif
+                            @if($volunteer->skills == "Baby Sitting")
+                            selected
+                            @endif
                     >Baby Sitting</option>
                     <option value="Cooking"
-                        @if($volunteer->skills == "Cooking")
-                        selected
-                        @endif
+                            @if($volunteer->skills == "Cooking")
+                            selected
+                            @endif
                     >Cooking</option>
                 </select>
             </div>
@@ -371,24 +371,24 @@
             <div class="col-sm-3">
                 <select class="form-control form-control-lg" id="Volunteer_Status" name="approval_status" disabled>
                     <option value="Approved"
-                        @if($volunteer->approval_status == "Approved")
-                        selected
-                        @endif
+                            @if($volunteer->approval_status == "Approved")
+                            selected
+                            @endif
                     >Approved</option>
                     <option value="Pending Approval"
-                        @if($volunteer->approval_status == "Pending Approval")
-                        selected
-                        @endif
+                            @if($volunteer->approval_status == "Pending Approval")
+                            selected
+                            @endif
                     >Pending Approval</option>
                     <option value="Disapproved"
-                        @if($volunteer->approval_status == "Disapproved")
-                        selected
-                        @endif
+                            @if($volunteer->approval_status == "Disapproved")
+                            selected
+                            @endif
                     >Disapproved</option>
                     <option value="Inactive"
-                        @if($volunteer->approval_status == "Inactive")
-                        selected
-                        @endif
+                            @if($volunteer->approval_status == "Inactive")
+                            selected
+                            @endif
                     >Inactive</option>
                 </select>
             </div>

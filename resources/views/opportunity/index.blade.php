@@ -18,43 +18,43 @@
                         <div class="row" style="margin: 25px 0px 0px 0px">
                             <table id="opportunityTable" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                 <thead>
-                                    <tr>
-                                        <th>Opportunity Name</th>
-                                        <th>Location Center</th>
-                                        <th>Licenses</th>
-                                        <th>Skills</th>
-                                        <th>Date Created</th>
-                                        <th>Actions</th>
-                                    </tr>
+                                <tr>
+                                    <th>Opportunity Name</th>
+                                    <th>Location Center</th>
+                                    <th>Licenses</th>
+                                    <th>Skills</th>
+                                    <th>Date Created</th>
+                                    <th>Actions</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($opportunities as $opportunity)
-                                        <tr>
-                                            <td>{{ $opportunity->name }}</td>
-                                            <td>{{ $opportunity->volunteer_center }}</td>
-                                            <td>{{ $opportunity->licenses }}</td>
-                                            <td>{{ $opportunity->skills }}</td>
-                                            <td>{{ $opportunity->created_at }}</td>
-                                            <td>
-                                                <a href="{{ route('opportunity.show', ['id' => $opportunity->id]) }}">
-                                                    <button class="btn btn-xs btn-primary">View</button>
-                                                </a>
-                                                <a href="{{ route('opportunity.edit', ['id' => $opportunity->id]) }}">
-                                                    <button class="btn btn-xs btn-success">Edit</button>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    @endforeach
+                                @foreach($opportunities as $opportunity)
+                                    <tr>
+                                        <td>{{ $opportunity->name }}</td>
+                                        <td>{{ $opportunity->volunteer_center }}</td>
+                                        <td>{{ $opportunity->licenses }}</td>
+                                        <td>{{ $opportunity->skills }}</td>
+                                        <td>{{ $opportunity->created_at }}</td>
+                                        <td>
+                                            <a href="{{ route('opportunity.show', ['id' => $opportunity->id]) }}">
+                                                <button class="btn btn-xs btn-primary">View</button>
+                                            </a>
+                                            <a href="{{ route('opportunity.edit', ['id' => $opportunity->id]) }}">
+                                                <button class="btn btn-xs btn-success">Edit</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                                 <tfoot>
-                                    <tr>
-                                        <th>Opportunity Name</th>
-                                        <th>Location Center</th>
-                                        <th>Licenses</th>
-                                        <th>Skills</th>
-                                        <th>Date Created</th>
-                                        <th></th>
-                                    </tr>
+                                <tr>
+                                    <th>Opportunity Name</th>
+                                    <th>Location Center</th>
+                                    <th>Licenses</th>
+                                    <th>Skills</th>
+                                    <th>Date Created</th>
+                                    <th></th>
+                                </tr>
                                 </tfoot>
                             </table>
                         </div>
