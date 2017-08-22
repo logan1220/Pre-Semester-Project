@@ -24,7 +24,7 @@
                         </div><p>
                         <hr width="80%">
                         <div style="text-align:right;"><p><div style="text-decoration:underline"><b>Wesley Tucker</b></div><p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wesley (top right) was born and raised in Jacksonville, Florida. As a transfer student to the University of North Florida from St. Johns River State College in 2016, he expects to graduate with a Bachelor’s degree in Information Science at the end of the Spring 2018 semester. Wesley is currently interning at inforMED CME, and is also employed at The First Tee of North Florida where he is a head coach
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wesley (top right) was born and raised in Jacksonville, Florida. As a transfer student to the University of North Florida from St. Johns River State College in 2016, he expects to graduate with a Bachelor’s degree in Information Science at the end of the Spring 2018 semester. Wesley is currently interning at inforMED CME and is also employed at The First Tee of North Florida where he is a head coach
                         </div><p>
 
                     </div>
