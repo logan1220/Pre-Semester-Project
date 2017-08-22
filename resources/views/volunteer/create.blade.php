@@ -20,9 +20,9 @@
             </div>
             <hr>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('fname') ? ' has-error' : '' }}">
                 {{csrf_field()}}
-                <label for="fname" class="col-sm-2 col-form-label col-form-label-lg">Volunteer Name<font color="red">*</font></label>
+                <label for="fname" class="col-sm-2 col-form-label col-form-label-lg">Volunteer Name</label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Fname"
                            placeholder="First Name"
@@ -30,7 +30,7 @@
                            value="{{ old('fname') }}"
                            required>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 {{ $errors->has('lname') ? ' has-error' : '' }}">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Lname"
                            placeholder="Last Name"
                            name="lname"
@@ -39,8 +39,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="address" class="col-sm-2 col-form-label col-form-label-lg">Address<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('address1') ? ' has-error' : '' }}">
+                <label for="address" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Address"
                            placeholder="Address"
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('address2') ? ' has-error' : '' }}">
                 <label for="address2" class="col-sm-2 col-form-label col-form-label-lg">Address 2</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Address2"
@@ -60,8 +60,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="city" class="col-sm-2 col-form-label col-form-label-lg">City<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('city') ? ' has-error' : '' }}">
+                <label for="city" class="col-sm-2 col-form-label col-form-label-lg">City</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_City"
                            placeholder="City"
@@ -71,8 +71,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="state" class="col-sm-2 col-form-label col-form-label-lg">State<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('state') ? ' has-error' : '' }}">
+                <label for="state" class="col-sm-2 col-form-label col-form-label-lg">State</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_State" name="state" required>
                         <option value="">-- Select a State --</option>
@@ -87,8 +87,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="zip" class="col-sm-2 col-form-label col-form-label-lg">Zip<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('zip') ? ' has-error' : '' }}">
+                <label for="zip" class="col-sm-2 col-form-label col-form-label-lg">Zip</label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Zip"
                            placeholder="Zip"
@@ -98,8 +98,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="education" class="col-sm-2 col-form-label col-form-label-lg">Educational Background<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('education') ? ' has-error' : '' }}">
+                <label for="education" class="col-sm-2 col-form-label col-form-label-lg">Educational Background</label>
                 <div class="col-sm-6">
                     <select class="form-control form-control-lg" id="Volunteer_Education" name="education" required>
                         <option value ="None"
@@ -136,8 +136,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="licenses" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('licenses') ? ' has-error' : '' }}">
+                <label for="licenses" class="col-sm-2 col-form-label col-form-label-lg">Current Licenses</label>
                 <div class="col-sm-6">
                     <select class="form-control form-control-lg" id="Volunteer_Licenses" name="licenses" required>
                         <option value="None"
@@ -179,8 +179,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="username" class="col-sm-2 col-form-label col-form-label-lg">Account Information<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('username') ? ' has-error' : '' }}">
+                <label for="username" class="col-sm-2 col-form-label col-form-label-lg">Account Information</label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Account_Info"
                            placeholder="Username"
@@ -190,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('password') ? ' has-error' : '' }}">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-3">
                     <input type="password" class="form-control form-control-lg" id="Volunteer_Account_Info"
@@ -200,7 +200,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-3">
                     <input type="password" class="form-control form-control-lg" id="Volunteer_Account_Info"
@@ -210,7 +210,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('phone_home') ? ' has-error' : '' }}">
                 <label for="phone_home" class="col-sm-2 col-form-label col-form-label-lg">Home Phone</label>
                 <div class="col-sm-3">
                     <input type="tel" class="form-control form-control-lg" id="Volunteer_Phone"
@@ -220,8 +220,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="phone_cell" class="col-sm-2 col-form-label col-form-label-lg">Cell Phone<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('phone_cell') ? ' has-error' : '' }}">
+                <label for="phone_cell" class="col-sm-2 col-form-label col-form-label-lg">Cell Phone</label>
                 <div class="col-sm-3">
                     <input type="tel" class="form-control form-control-lg" id="Volunteer_Phone"
                            placeholder="904-123-4567"
@@ -231,7 +231,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('phone_work') ? ' has-error' : '' }}">
                 <label for="phone_work" class="col-sm-2 col-form-label col-form-label-lg">Work Phone</label>
                 <div class="col-sm-3">
                     <input type="tel" class="form-control form-control-lg" id="Volunteer_Work_Phone"
@@ -241,8 +241,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="email" class="col-sm-2 col-form-label col-form-label-lg">Email Address<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('email') ? ' has-error' : '' }}">
+                <label for="email" class="col-sm-2 col-form-label col-form-label-lg">Email Address</label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Email"
                            placeholder="Email"
@@ -252,8 +252,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="drivers_license" class="col-sm-2 col-form-label col-form-label-lg">Drivers License<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('drivers_license') ? ' has-error' : '' }}">
+                <label for="drivers_license" class="col-sm-2 col-form-label col-form-label-lg">Drivers License</label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Driver"
                            placeholder="Drivers License"
@@ -263,8 +263,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="ssn" class="col-sm-2 col-form-label col-form-label-lg">Social Security<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('ssn') ? ' has-error' : '' }}">
+                <label for="ssn" class="col-sm-2 col-form-label col-form-label-lg">Social Security</label>
                 <div class="col-sm-3">
                     <input type="password" class="form-control form-control-lg" id="Volunteer_SSN"
                            placeholder="Social Security"
@@ -274,8 +274,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="volunteer_centers" class="col-sm-2 col-form-label col-form-label-lg">Preferred Locations<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('volunteer_centers') ? ' has-error' : '' }}">
+                <label for="volunteer_centers" class="col-sm-2 col-form-label col-form-label-lg">Preferred Locations</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_Location" name="volunteer_centers" required>
                         <option value="All"
@@ -308,7 +308,7 @@
             </div>
 
             <div class="form-group row">
-                <label for="weekday_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekday Availability<font color="red">*</font></label>
+                <label for="weekday_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekday Availability</label>
                 <div class="col-sm-3 input-group" style="width: 278px; padding-left: 15px;">
                     <select class="form-control form-control-lg" id="Volunteer_Weekday_Availability" name="weekday_availability_start" required>
                         @foreach(['AM', 'PM'] as $ampm)
@@ -337,7 +337,7 @@
             </div>
 
             <div class="form-group row">
-                <label for="weekend_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekend Availability<font color="red">*</font></label>
+                <label for="weekend_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekend Availability</label>
                 <div class="col-sm-3 input-group" style="width: 278px; padding-left: 15px;">
                     <select class="form-control form-control-lg" id="Volunteer_Weekend_Availability" name="weekend_availability_start" required>
                         @foreach(['AM', 'PM'] as $ampm)
@@ -365,8 +365,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="skills" class="col-sm-2 col-form-label col-form-label-sm">Volunteer's Skills<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('skills') ? ' has-error' : '' }}">
+                <label for="skills" class="col-sm-2 col-form-label col-form-label-sm">Volunteer's Skills</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_Skills" name="skills" required>
                         <option value="None"
@@ -398,7 +398,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('approval_status') ? ' has-error' : '' }}">
                 <label for="ssn" class="col-sm-2 col-form-label col-form-label-lg">Approval Status</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_Status" name="approval_status" required>
@@ -432,16 +432,16 @@
             </div>
             <hr>
 
-            <div class="form-group row">
-                <label for="emergency_fname" class="col-sm-2 col-form-label col-form-label-lg">Contact Name<font color="red">*</font></label>
-                <div class="col-sm-3">
+            <div class="form-group row ">
+                <label for="emergency_fname" class="col-sm-2 col-form-label col-form-label-lg">Contact Name</label>
+                <div class="col-sm-3 {{ $errors->has('emergency_fname') ? ' has-error' : '' }}">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Emergency_Fname"
                            placeholder="Emergency Contact's First Name"
                            name="emergency_fname"
                            value="{{ old('emergency_fname') }}"
                            required>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 {{ $errors->has('emergency_lname') ? ' has-error' : '' }}">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Emergency_Lname"
                            placeholder="Emergency Contact's Last Name"
                            name="emergency_lname"
@@ -450,8 +450,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="emergency_address1" class="col-sm-2 col-form-label col-form-label-lg">Contact Address<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('emergency_address1') ? ' has-error' : '' }}">
+                <label for="emergency_address1" class="col-sm-2 col-form-label col-form-label-lg">Contact Address</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Emergency_Address"
                            placeholder="Emergency Contact's Address"
@@ -461,7 +461,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('emergency_address2') ? ' has-error' : '' }}">
                 <label for="emergency_address2" class="col-sm-2 col-form-label col-form-label-lg">Address 2</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Emergency_Address2"
@@ -471,8 +471,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="emergency_city" class="col-sm-2 col-form-label col-form-label-lg">City<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('emergency_city') ? ' has-error' : '' }}">
+                <label for="emergency_city" class="col-sm-2 col-form-label col-form-label-lg">City</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Emergency_City"
                            placeholder="City"
@@ -482,8 +482,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="emergency_state" class="col-sm-2 col-form-label col-form-label-lg">State<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('emergency_states') ? ' has-error' : '' }}">
+                <label for="emergency_state" class="col-sm-2 col-form-label col-form-label-lg">State</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Volunteer_Emergency_State" name="emergency_state" required>
                         <option value="">-- Select a State --</option>
@@ -498,8 +498,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="emergency_zip" class="col-sm-2 col-form-label col-form-label-lg">Zip<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('emergency_zip') ? ' has-error' : '' }}">
+                <label for="emergency_zip" class="col-sm-2 col-form-label col-form-label-lg">Zip</label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_Emergency_Zip"
                            placeholder="Zip"
@@ -509,7 +509,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('emergency_phone_home') ? ' has-error' : '' }}">
                 <label for="emergency_phone_home" class="col-sm-2 col-form-label col-form-label-lg">Contact Home Number</label>
                 <div class="col-sm-3">
                     <input type="tel" class="form-control form-control-lg" id="Volunteer_Emergency_Phone_Home"
@@ -519,8 +519,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="emergency_phone_cell" class="col-sm-2 col-form-label col-form-label-lg">Contact Cell Number<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('emergency_ohone_cell') ? ' has-error' : '' }}">
+                <label for="emergency_phone_cell" class="col-sm-2 col-form-label col-form-label-lg">Contact Cell Number</label>
                 <div class="col-sm-3">
                     <input type="tel" class="form-control form-control-lg" id="Volunteer_Emergency_Phone_Cell"
                            placeholder="Emergency Cell Number"

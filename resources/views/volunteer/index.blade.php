@@ -32,8 +32,8 @@
                                 <thead>
                                 <tr>
                                     <th>Full Name</th>
-                                    <th>Email</th>
-                                    <th>Cell Phone</th>
+                                    <th>Licenses</th>
+                                    <th>Skills</th>
                                     <th>Status</th>
                                     <th>Date Created</th>
                                     <th>Actions</th>
@@ -43,8 +43,8 @@
                                 @foreach($volunteers as $volunteer)
                                     <tr>
                                         <td>{{ $volunteer->fname . " " . $volunteer->lname }}</td>
-                                        <td>{{ $volunteer->email }}</td>
-                                        <td>{{ $volunteer->phone_cell }}</td>
+                                        <td>{{ $volunteer->licenses }}</td>
+                                        <td>{{ $volunteer->skills }}</td>
                                         <td>{{ $volunteer->approval_status }}</td>
                                         <td>{{ $volunteer->created_at }}</td>
                                         <td>
@@ -61,8 +61,8 @@
                                 <tfoot>
                                 <tr>
                                     <th>Full Name</th>
-                                    <th>Email</th>
-                                    <th>Cell Phone</th>
+                                    <th>Licenses</th>
+                                    <th>Skills</th>
                                     <th>Status</th>
                                     <th>Date Created</th>
                                     <th></th>

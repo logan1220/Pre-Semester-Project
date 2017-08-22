@@ -20,9 +20,9 @@
             </div>
             <hr>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('name') ? ' has-error' : '' }}">
                 {{csrf_field()}}
-                <label for="Opportunity_Fname" class="col-sm-2 col-form-label col-form-label-lg">Opportunity Name<font color="red">*</font></label>
+                <label for="Opportunity_Fname" class="col-sm-2 col-form-label col-form-label-lg">Opportunity Name</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Opportunity_Name"
                            placeholder="Opportunity Name"
@@ -32,8 +32,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="Opportunity_Address" class="col-sm-2 col-form-label col-form-label-lg">Address<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('address1') ? ' has-error' : '' }}">
+                <label for="Opportunity_Address" class="col-sm-2 col-form-label col-form-label-lg">Address</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Opportunity_Address"
                            placeholder="Address"
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row {{ $errors->has('address2') ? ' has-error' : '' }}">
                 <label for="Opportunity_Address2" class="col-sm-2 col-form-label col-form-label-lg">Address 2</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Opportunity_Address2"
@@ -53,8 +53,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="city" class="col-sm-2 col-form-label col-form-label-lg">City<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('city') ? ' has-error' : '' }}">
+                <label for="city" class="col-sm-2 col-form-label col-form-label-lg">City</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control form-control-lg" id="Volunteer_City"
                            placeholder="City"
@@ -64,8 +64,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="Opportunity_Location" class="col-sm-2 col-form-label col-form-label-lg">Location Center<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('volunteer_center') ? ' has-error' : '' }}">
+                <label for="Opportunity_Location" class="col-sm-2 col-form-label col-form-label-lg">Location Center</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Opportunity_Location" name="volunteer_center"
                             required>
@@ -98,8 +98,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="Opportunity_State" class="col-sm-2 col-form-label col-form-label-lg">State<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('state') ? ' has-error' : '' }}">
+                <label for="Opportunity_State" class="col-sm-2 col-form-label col-form-label-lg">State</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Opportunity_State" name="state" required>
                         <option value="">-- Select a State --</option>
@@ -114,8 +114,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="Opportunity_Licenses" class="col-sm-2 col-form-label col-form-label-lg">Licenses Required<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('licenses') ? ' has-error' : '' }}">
+                <label for="Opportunity_Licenses" class="col-sm-2 col-form-label col-form-label-lg">Licenses Required</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Opportunity_Licenses" name="licenses" required>
                         <option value="None"
@@ -158,7 +158,7 @@
             </div>
 
             <div class="form-group row">
-                <label for="weekday_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekday Availability<font color="red">*</font></label>
+                <label for="weekday_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekday Availability</label>
                 <div class="col-sm-3 input-group" style="width: 278px; padding-left: 15px;">
                     <select class="form-control form-control-lg" id="Opportunity_Weekday_Availability"
                             name="weekday_availability_start"
@@ -191,7 +191,7 @@
             </div>
 
             <div class="form-group row">
-                <label for="weekend_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekend Availability<font color="red">*</font></label>
+                <label for="weekend_availability_start" class="col-sm-2 col-form-label col-form-label-lg">Weekend Availability</label>
                 <div class="col-sm-3 input-group" style="width: 278px; padding-left: 15px;">
                     <select class="form-control form-control-lg" id="Opportunity_Weekend_Availability"
                             name="weekend_availability_start"
@@ -223,8 +223,8 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="Opportunity_Skills" class="col-sm-2 col-form-label col-form-label-sm">Opportunity's Skills<font color="red">*</font></label>
+            <div class="form-group row {{ $errors->has('skills') ? ' has-error' : '' }}">
+                <label for="Opportunity_Skills" class="col-sm-2 col-form-label col-form-label-sm">Opportunity's Skills</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Opportunity_Skills" name="skills" required>
                         <option value="None"

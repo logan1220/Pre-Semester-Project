@@ -223,7 +223,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <div class="form-group row ">
                 <label for="Opportunity_Skills" class="col-sm-2 col-form-label col-form-label-sm">Opportunity's Skills</label>
                 <div class="col-sm-3">
                     <select class="form-control form-control-lg" id="Opportunity_Skills" name="skills" disabled>
